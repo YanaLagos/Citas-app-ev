@@ -1,0 +1,9 @@
+<ion-item>
+  <ion-label>¿Desea poder borrar citas en el inicio (frase aleatoria)?</ion-label>
+  <ion-toggle [(ngModel)]="eliminarPermitido" (ionChange)="actualizarPermisoEliminar()"></ion-toggle>
+
+  <ion-button (click)="irAGestionCitas()">
+    Gestionar Citas
+  </ion-button>
+</ion-item>
+

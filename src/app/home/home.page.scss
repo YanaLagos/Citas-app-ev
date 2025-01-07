@@ -1,0 +1,25 @@
+.cita-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+ion-icon {
+  color: rgb(139, 13, 170);    
+  font-size: 24px;   
+}
+ion-buttons {
+  --background: transparent; 
+  --border-radius: 50%;  
+  --color: rgb(139, 13, 170);          
+
+}
+.delete {
+  --background: #d3b9e5; 
+  --color: rgb(0, 0, 0);    
+  margin-top: 20px;  
+  width: 100%;     
+  font-size: 1.1rem;    
+  padding: 12px;    
+  border-radius: 8px;  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}

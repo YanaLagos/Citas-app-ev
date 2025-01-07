@@ -1,0 +1,11 @@
+<ion-item>
+  <ion-label position="stacked">Frase</ion-label>
+  <ion-input [(ngModel)]="frase" placeholder="Escribe una frase" required></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Autor</ion-label>
+  <ion-input [(ngModel)]="autor" placeholder="Escribe el autor" required></ion-input>
+</ion-item>
+
+<ion-button expand="full" (click)="agregarCita()">Agregar Cita</ion-button>

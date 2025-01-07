@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Citas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToConfig()">
+        <ion-icon slot="icon-only" name="settings-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Usamos el componente app-cita para mostrar la cita -->
+  <app-cita [cita]="cita"></app-cita>
+
+  <!-- Botón para eliminar la cita si el usuario tiene permiso -->
+  <ion-button class="delete" *ngIf="eliminarPermitido" (click)="eliminarCita()">
+    Eliminar cita
+  </ion-button>
+</ion-content>
